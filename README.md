@@ -40,6 +40,16 @@ fchkalkeys/
 
 Or simply double-click `index.html` to open it directly.
 
+## GitHub Pages Deployment
+
+This project is a static HTML, CSS, and JavaScript site; it does not use Vite or require a build command. The Pages Actions workflow uploads the project root directly.
+
+1. Put the **contents** of this project folder at the root of the GitHub repository, including `.github/workflows/pages.yml`.
+2. In the repository, open **Settings → Pages** and set the build and deployment source to **GitHub Actions**.
+3. Push to the `main` or `master` branch, or run the **Deploy static site to GitHub Pages** workflow manually.
+
+The stylesheet and image URLs are relative, so they work on both repository project sites and custom domains. Product detail pages use hash routes and do not require a server-side rewrite.
+
 ### Features Included
 
 ✅ **Responsive Design** — Works perfectly on desktop, tablet, and mobile
